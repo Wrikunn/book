@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1032410",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "2127051",
+      "name": "259钻石",
+      "font_class": "diamond",
+      "unicode": "e91f",
+      "unicode_decimal": 59679
+    },
+    {
+      "icon_id": "7310411",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e74a",
+      "unicode_decimal": 59210
+    },
+    {
+      "icon_id": "21193297",
+      "name": "书本",
+      "font_class": "shuben",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    }
+  ]
+}

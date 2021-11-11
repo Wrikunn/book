@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车-孔网</title>
+    <link rel="icon" href="./img/pclogo.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/point.css">
+    <link rel="stylesheet" href="./css/car.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/layer-v3.5.1/layer/layer.js"></script>
+    <script>
+        let index = layer.open({
+            type: 3
+        })
+    </script>
+    <style>
+        .tanchu .layui-layer-dialog{
+            border: 1px solid #8C222C;
+        }
+        .tanchu .layui-layer-title{
+            color: #8C222C;
+            font-size: 20px;
+            /* border-bottom: 1px solid #8C222C; */
+        }
+        .tanchu .layui-layer-content{
+            color: #333;
+            font-size: 16px;
+        }
+        .tanchu .layui-layer-btn .layui-layer-btn0{
+            background-color:#f9f9f9;
+            color:#8C222C;
+            border: 1px solid #C7C3C0;
+        }
+        .tanchu .layui-layer-btn .layui-layer-btn1{
+            background-color:#8C222C;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部登录部分 -->
+    <div id="header">
+        <div class="center">
+            <p class="pointhead">
+                <a href="index.html">首页</a>
+                <a href="#">书店区</a>
+                <a href="#">书摊区</a>
+                <a href="#">新书</a>
+                <a href="#">在线拍卖</a>
+                <a href="#">艺术品专场</a>
+            </p>
+            <p>
+                <a href="#" id="logzhu">登录/注册
+                    <em>
+                        <input type="button" value="登录" class="loginbtn">
+                        <input type="button" value="免费注册"  class="enrollbtn">
+                        <strong>其他方式</strong>
+                        <img src="./img/header-denglu.jpg" alt="">
+                    </em>
+                </a>
+                <a href="">消息</a>
+                <a href="./car.html" id="car">购物车
+                    <em>
+                        您的购物车是空的，
+                        <br>
+                        登录后可以同步购物车中的商品哦
+                        <input type="button" value="登录" class="loginbtn">
+                    </em>
+                </a>
+                <a href="">我的订单</a>
+                <a href="">个人中心</a>
+                <a href="">卖家中心</a>
+                <a href="">客服</a>
+                <a href="">手机版
+                    <em>
+                        <img src="./img/header-app.jpg" alt="">
+                    </em></a>
+                <span>
+                    送至
+                    <select name="" id="">
+                        <option value="北京">北京</option>
+                        <option value="重庆">重庆</option>
+                        <option value="上海">上海</option>
+                        <option value="西安">西安</option>
+                    </select>
+                </span>
+            </p>
+        </div>
+    </div>
+    <!-- 登录注册界面 -->
+    <div id="loginbox">
+        <!-- 登录界面 -->
+        <div class="login">
+           <h3>登录
+               <a href="#" class="yanzhengbtn">手机验证码登录</a>
+           </h3> 
+           <form action="">
+               <input type="text" placeholder="用户名/手机号/邮箱" id="user" autocomplete="off">
+               <span class="inputtxt"></span>
+               <input type="password" placeholder="密码" id="pass" autocomplete="off">
+               <span class="inputtxt"></span>
+               <p>
+                    <input type="checkbox" name="">
+                    <span>下次自动登录</span>
+                    <span>忘记密码</span>
+                </p>
+                <input type="button" value="登录" class="redbox" id="login">
+                <a href="">微信</a>
+                <a href="">QQ</a>
+                <a href="">微博</a>
+                <a href="#" class="enrollbtn">立即注册</a>
+           </form>
+           <img src="img/login-saoma.png" alt="" class="mabtn">
+        </div>
+        <!-- 注册界面 -->
+        <div class="enroll">
+           <h3>注册
+               <a href="#" class="loginbtn">快速登录</a>
+           </h3> 
+           <form action="">
+               <input type="text" placeholder="手机号" id="phone">
+               <span class="inputtxt"></span>
+               <input type="text" placeholder="短信验证码" autocomplete="off">
+               <i>获取验证码</i>
+               <input type="text" placeholder="昵称" autocomplete="off" id="niname">
+               <span class="inputtxt"></span>
+               <input type="password" placeholder="设置密码" autocomplete="off" id="newpsw">
+               <span class="inputtxt"></span>
+               <p>
+                    <input type="checkbox" name="" autocomplete="off">
+                    <b>我已阅读并接受孔网&nbsp;&nbsp;<a href="#">《服务协议》</a>和&nbsp;<a href="#">《账户协议》</a></b>
+                </p>
+                <input type="button" value="注册" class="redbox" id="zhuce" autocomplete="off" disabled>
+           </form>
+        </div>
+        <!-- 验证码登录界面 -->
+        <div class="yanzheng">
+           <h3>登录
+               <a href="#" class="loginbtn">其它登录方式登录</a>
+           </h3> 
+           <form action="">
+               <input type="text" placeholder="手机号" autocomplete="off">
+               <span class="inputtxt"></span>
+               <input type="password" placeholder="短信验证码" autocomplete="off">
+               <i>获取验证码</i>
+               <p>
+                    设置新密码，方便下次登录
+                </p>
+                <input type="button" value="登录" class="redbox">
+           </form>
+           <img src="img/login-saoma.png" alt="" class="mabtn">
+        </div>
+        <!-- 扫码登录界面 -->
+        <div class="ma">
+           <h3>扫码登录
+               <a href="#">免输入/更快/更安全</a>
+           </h3> 
+           <center>
+               <img src="img/yanzhengma.png" alt="">
+               <p>请使用最新版孔网客户端扫码</p>
+           </center>
+           <form action="">
+                <a href="">微信</a>
+                <a href="">QQ</a>
+                <a href="">微博</a>
+                <a href="#" class="enrollbtn">立即注册</a>
+           </form>
+           <img src="img/login-zhanghao.png" alt="" class="loginbtn">
+        </div>
+        <input type="button" value="X" id="close" autocomplete="off">
+    </div>
+    <!-- logo部分 -->
+    <div id="logo">
+        <div class="center">
+            <img src="./img/logo-red.png" alt="">
+            <div>
+                <p>
+                    <span>商品
+                        <em></em>
+                    </span>
+                    <span>拍卖区</span>
+                </p>
+                <p>
+                    <input type="search" placeholder="商品名称、作者、出版社、ISBN">
+                    <select name="" id="">
+                        <option value="">在售</option>
+                        <option value="">已售</option>
+                    </select>
+                    <input type="button" value="搜索">
+                    <span>
+                        高级
+                        <br>
+                        搜索
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 购物车为空 -->
+    <div id="carempty">
+        您的购物车是空的，您可以<a href="./index.html">去逛逛</a>
+    </div>
+    <!-- 购物车列表部分 -->
+    <div id="shopcar">
+        <div class="center">
+            <div class="shopcarHead">
+                <input type="checkbox" name="checkAll" class="checkAll">
+                <span>全选</span>
+                <span>商品</span>
+                <span>品相</span>
+                <span>单价</span>
+                <span>数量</span>
+                <span>金额</span>
+                <span>操作</span>
+            </div>
+            <div class="shopcarFoot">
+                <div>
+                    <input type="checkbox" name="checkAll" class="checkAll">
+                    <span>全选</span>
+                </div>
+                <button id="buy">去结算</button>
+                <em>
+                    <span>合计（不含运费）：</span>
+                    <i></i>
+                </em>
+            </div>
+        </div>
+    </div>
+    <!-- 底部部分 -->
+    <div id="footer">
+        <div class="center">
+            <p>
+                © 2002-2021 Kongfz.com 孔夫子旧书网 版权所有
+                <span>
+                    <a href="">关于孔网</a>
+                    <a href="">联系我们</a>
+                    <a href="">帮助中心</a>
+                    <a href="">版权隐私</a>
+                    <a href="">广告业务</a>
+                    <a href="">工作机会</a>
+                    <a href="">移动版</a>
+                    <a href="">图书目录</a>
+                    <a href="">图书标签</a>
+                </span>
+            </p>
+            <p>
+                京ICP证041501号&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;京公网安备11010502035846号&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;出版物经营许可证&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;企业营业执照&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;违法和不良信息举报电话：010-64755951，违法和不良信息/涉未成年人有害信息投诉&nbsp;shenhe@kongfz.com
+            </p>
+        </div>
+    </div>
+    <!-- 右边悬浮框部分 -->
+    <div id="aside">
+        <div class="toTop">返回<br>顶部</div>
+        <div>用户<br>反馈</div>
+    </div>
+</body>
+</html>
+<script src="./js/login.js"></script>
+<script src="./js/car.js"></script>

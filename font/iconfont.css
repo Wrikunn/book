@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1631158686062') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xingxing:before {
+  content: "\e642";
+}
+
+.icon-diamond:before {
+  content: "\e91f";
+}
+
+.icon-xiangyou:before {
+  content: "\e74a";
+}
+
+.icon-shuben:before {
+  content: "\e62b";
+}
+

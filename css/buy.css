@@ -1,0 +1,196 @@
+#address p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  color: #333333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#address .addform ul {
+  font-size: 12px;
+  padding: 20px 0;
+}
+#address .addform ul li {
+  margin-bottom: 10px;
+}
+#address .addform ul li span {
+  display: inline-block;
+  color: #666;
+  width: 130px;
+  margin-right: 20px;
+  line-height: 28px;
+  text-align: right;
+}
+#address .addform ul li span i {
+  color: #d00000;
+}
+#address .addform ul li input {
+  height: 26px;
+  width: 142px;
+  padding: 0 8px;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  outline: none;
+  color: #333;
+  font-size: 12px;
+}
+#address .addform ul li input::-webkit-input-placeholder {
+  color: #ccc;
+}
+#address .addform ul li select {
+  height: 26px;
+  border: 1px solid #ccc;
+  outline: none;
+  color: #333;
+  width: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+#address .addform ul li:nth-of-type(2) input {
+  width: 400px;
+}
+#address .addform ul li:nth-of-type(3) span:not(:first-child) {
+  width: 200px;
+  text-align: left;
+  display: inline-block;
+  margin-left: 8px;
+  color: #999;
+}
+#address .addform ul li:nth-of-type(3) span:not(:first-child) a {
+  padding: 0 4px;
+  color: #365899;
+}
+#address .addform ul li:nth-of-type(3) span:not(:first-child) a:hover {
+  color: #8c222c;
+}
+#address .addform ul li:nth-last-of-type(2) {
+  padding-left: 152px;
+}
+#address .addform ul li:nth-last-of-type(2) input {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  vertical-align: text-bottom;
+}
+#address .addform ul li:nth-last-of-type(2) em {
+  color: #333;
+}
+#address .addform ul li:nth-last-of-type(1) {
+  padding-left: 152px;
+  padding-top: 30px;
+}
+#address .addform ul li:nth-last-of-type(1) button {
+  width: 140px;
+  height: 36px;
+  border: 0;
+  background-color: #8c222c;
+  color: #fff;
+  cursor: pointer;
+}
+#address .addform ul li:nth-last-of-type(1) button:hover {
+  background-color: #7b111b;
+}
+#address .addform ul #message {
+  height: 50px;
+  line-height: 50px;
+  background-color: #f8f7f3;
+  color: #333;
+  padding-left: 55px;
+  display: none;
+}
+#address .addform ul #message span {
+  display: inline-block;
+  width: 210px;
+}
+#address .addform ul #message:hover {
+  color: #8c222c;
+}
+
+#shopcar .center > p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  color: #333333;
+  margin-top: 44px;
+}
+#shopcar .center .shopcarPoint > p span:nth-of-type(1) {
+  margin-left: 0;
+}
+#shopcar .center .shopcarPoint ul li {
+  height: 85px;
+}
+#shopcar .center .shopcarPoint ul li img {
+  width: 50px;
+  height: 50px;
+}
+#shopcar .center .shopcarPoint ul li > div {
+  margin-top: 18px;
+}
+#shopcar .center .shopcarPoint ul li > i {
+  color: #bf7f5f;
+}
+#shopcar .center .shopcarPoint ul li span:nth-of-type(2) {
+  width: 215px;
+  text-align: center;
+}
+#shopcar .center .shopcarPoint ul li span:nth-of-type(3) {
+  margin-left: 90px;
+}
+#shopcar .center .shopcarPoint > div {
+  height: 50px;
+  width: 462px;
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 50px;
+  float: right;
+  color: #333333;
+}
+#shopcar .center .shopcarPoint > div span:nth-of-type(1) {
+  width: 95px;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+#shopcar .center .shopcarPoint > div span:nth-of-type(3) {
+  float: right;
+  margin-right: 5px;
+}
+#shopcar .center .shopcarPoint > div span:nth-of-type(3) i {
+  color: #bf7f5f;
+}
+#shopcar .center .shopBuy {
+  margin-top: 10px;
+  border-top: 2px solid #8c222c;
+  padding-top: 26px;
+  text-align: right;
+}
+#shopcar .center .shopBuy p {
+  color: #a9987f;
+  line-height: 22px;
+}
+#shopcar .center .shopBuy p:nth-of-type(1) {
+  line-height: 26px;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+#shopcar .center .shopBuy p:nth-of-type(1) i {
+  color: #8c222c;
+  font-size: 16px;
+}
+#shopcar .center .shopBuy p:nth-of-type(1) i:last-of-type {
+  font-size: 26px;
+}
+#shopcar .center .shopBuy button {
+  width: 180px;
+  height: 40px;
+  background-color: #8c222c;
+  color: #fff;
+  border: 0;
+  margin-top: 25px;
+  cursor: pointer;
+}
+#shopcar .center .shopBuy button:hover {
+  background-color: #7b111b;
+}
+
+/*# sourceMappingURL=buy.css.map */

@@ -1,0 +1,33 @@
+#recom .banner .imgbox img{
+    width: 1010px;
+    height: 270px;
+    vertical-align: top;
+}
+#recom .banner{
+    overflow: hidden;
+    position: relative;
+}
+#recom .banner ul{
+    width: 160px;
+    /* height: 30px; */
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#recom .banner .imgbox{
+    position: absolute;
+}
+#recom .banner ul li{
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 14px;
+    color: #666;
+    background: rgba(255,255,255,.5);
+    margin-bottom: 1px;
+}
+#recom .banner ul .onfu{
+    background: rgba(255,255,255,.8)
+}

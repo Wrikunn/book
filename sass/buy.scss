@@ -1,0 +1,206 @@
+@mixin title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(51, 51, 51);
+}
+#address{
+    p{
+        @include title();
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .addform{
+        // background-color: #FEF9F8;
+        ul{
+            font-size: 12px;
+            padding: 20px 0;
+            li{
+                margin-bottom: 10px;
+                span{
+                    display: inline-block;
+                    color: #666;
+                    width: 130px;
+                    margin-right: 20px;
+                    line-height: 28px;
+                    text-align: right;
+                    i{
+                        color: #d00000;
+                    }
+                }
+                input{
+                    height: 26px;
+                    width: 142px;
+                    padding: 0 8px;
+                    border-radius: 0;
+                    border: 1px solid #ccc;
+                    outline: none;
+                    color: #333;
+                    font-size: 12px;
+                    &::-webkit-input-placeholder{
+                        color: #ccc;
+                    }
+                }
+                select{
+                    height: 26px;
+                    border: 1px solid #ccc;
+                    outline: none;
+                    color: #333;
+                    width: 100px;
+                    text-align: center;
+                    font-size: 12px;
+                }
+                &:nth-of-type(2) input{
+                    width: 400px;
+                }
+                &:nth-of-type(3) span:not(:first-child){
+                    width: 200px;
+                    text-align: left;
+                    display: inline-block;
+                    margin-left: 8px;
+                    color: #999;
+                    a{
+                        padding: 0 4px;
+                        color: #365899;
+                        &:hover{
+                            color: #8c222c;
+                        }
+                    }
+                }
+                &:nth-last-of-type(2){
+                    padding-left: 152px;
+                    input{
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid #ccc;
+                        border-radius: 0;
+                        vertical-align: text-bottom;
+                    }
+                    em{
+                        color: #333;
+                    }
+                }
+                &:nth-last-of-type(1){
+                    padding-left: 152px;
+                    padding-top: 30px;
+                    button{
+                        width: 140px;
+                        height: 36px;
+                        border: 0;
+                        background-color: #8c222c;
+                        color: #fff;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #7b111b
+                        }
+                    }
+                }
+            }
+            #message{
+                height: 50px;
+                line-height: 50px;
+                background-color: #f8f7f3;
+                color: #333;
+                padding-left: 55px;
+                display: none;
+                span{
+                    display: inline-block;
+                    width: 210px
+                }
+                &:hover{
+                    color: #8c222c
+                }
+            }
+        }
+    }
+}
+#shopcar .center{
+    >p{
+        @include title();
+        margin-top: 44px;
+    }
+    .shopcarPoint{
+        >p span:nth-of-type(1){
+            margin-left: 0;
+        }
+        ul li{
+            height: 85px;
+            img{
+               width: 50px;
+               height: 50px;
+           }
+           >div{
+               margin-top: 18px;
+           }
+           >i{
+               color: #bf7f5f;
+           }
+           span{
+                &:nth-of-type(2){
+                    width: 215px;
+                    text-align: center;
+                }
+               &:nth-of-type(3){
+                   margin-left: 90px;
+               }
+           }
+        }
+        >div{
+            height: 50px;
+            width: 462px;
+            border-bottom: 1px solid #e5e5e5;
+            line-height: 50px;
+            float: right;
+            color: rgb(51, 51, 51);
+            span{
+                &:nth-of-type(1){
+                    width: 95px;
+                    margin-left: 5px;
+                    margin-right: 15px;
+                }
+                &:nth-of-type(3){
+                    float: right;
+                    margin-right: 5px;
+                    i{
+                        color: #bf7f5f;
+                    }
+                }
+            }
+        }
+    }
+    .shopBuy{
+        margin-top: 10px;
+        border-top: 2px solid #8c222c;
+        padding-top: 26px;
+        text-align: right;
+        p{
+            color: #a9987f;
+            line-height: 22px;
+            &:nth-of-type(1){
+                line-height: 26px;
+                font-size: 16px;
+                color: rgb(51, 51, 51);
+                margin-bottom: 20px;
+                i{
+                    color: #8c222c;
+                    font-size: 16px;
+                    &:last-of-type{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+        button{
+            width: 180px;
+            height: 40px;
+            background-color: #8c222c;
+            color: #fff;
+            border: 0;
+            margin-top: 25px;
+            cursor: pointer;
+            &:hover{
+                background-color: #7b111b;
+            }
+        }
+    }
+}

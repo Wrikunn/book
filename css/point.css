@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* *************商品详情部分************** */
+#point .center{
+    overflow: visible;
+    font-size: 12px;
+    color: #333333;
+    position: relative;
+}
+#point .center>p{
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 60px;
+}
+#point a{
+    color: #365899;
+}
+#point a:hover{
+    color: #8C222C;
+}
+#point .left{
+    float: left;
+    position: relative;
+}
+#point .left .minbox{
+    margin-bottom: 14px;
+    position: relative;
+}
+#point .left .minbox img{
+    height: 160px;
+}
+/* 放大镜部分 */
+#point .left .glass{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #f32e42;
+    border-radius: 4px;
+    opacity: 0.3;
+    display: none;
+    cursor: move;
+}
+#point .glassmax{
+    position: absolute;
+    left: 180px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    background-color: #fff;
+    display: none;
+    border-radius: 8px;
+}
+#point .glassmax img{
+    width: 320px;
+    height: 320px;
+    position: absolute;
+}
+/* 放大镜部分结束 */
+#point .midd{
+    float: left;
+    width: 510px;
+    margin-left: 30px;
+    line-height: 20px;
+}
+#point .midd span{
+    float: left;
+    width: 38%;
+    margin-right: 40px;
+    vertical-align: top;
+}
+#point .midd .last{
+    clear: both;
+}
+#point .midd span i{
+    color: #666666;
+}
+#point .midd>div{
+    clear: both;
+    margin-top: 175px;
+}
+#point .right{
+    float: right;
+    width: 240px;
+}
+#point .right p{
+    line-height: 34px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 2px;
+}
+#point .right a{
+    display: inline-block;
+    width: 48%;
+    line-height: 26px;
+}
+/* *************相关推荐部分************** */
+#about .center{
+    margin-top: 25px;
+    font-size: 12px;
+}
+#about .center .navabout{
+    width: 100%;
+    height: 40px;
+    background-color: #F8F7F3;
+    display: flex;
+    align-items: center;
+}
+#about .center .navabout a{
+    color: #666666;
+    display: inline-block;
+    width: 68px;
+    text-align: center;
+}
+#about .center .navabout a:first-of-type{
+    color: #333333;
+    font-weight: 600;
+    border-right: 1px solid #CCCCCC;
+}
+#about .center .navabout .focus{
+    color: #BF7F5F;
+}
+#about .center .navabout a:hover{
+    color: #BF7F5F;
+}
+#about .center .navabout input{
+    vertical-align: text-bottom;
+}
+#about .center .navabout input+a{
+    color: #333333;
+    font-weight: 600;
+    text-align: left;
+}
+#about .center .navabout span{
+    flex: 1;
+    text-align: right;
+    margin-right: 30px;
+    color: #888888;
+    cursor: help;
+}
+#about ul{
+    clear: both;
+    height: 580px;
+}
+#about ul li{
+    border-bottom: 1px solid #E5E5E5;
+    overflow: auto;
+    padding: 20px;
+}
+#about ul .left{
+    float: left;
+}
+#about ul .left img{
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border: 1px solid #E5E5E5;
+    float: left;
+    margin:0 20px 20px 0;
+}
+#about ul .left p{
+    width: 170px;
+    float: left;
+    color: #A57F6D;
+    line-height: 18px;
+}
+#about ul .left p a{
+    font-size: 14px;
+    color: #365899;
+    line-height: 22px;
+}
+#about ul .left p a:hover{
+    color: #8C222C;
+}
+#about ul .midd{
+    float: left;
+    margin-left: 120px;
+}
+#about ul .midd>span{
+    color: #BF7F5F;
+    font-weight: 600;
+    float: left;
+    margin-right: 45px;
+}
+#about ul .midd>p{
+    float: left;
+    color: #999999;
+    line-height: 20px;
+}
+#about ul .midd>p em{
+    color: #666;
+}
+#about ul .midd>p em:hover{
+    color: #8C222C;
+}
+#about ul .midd>p i{
+    color: #22B8EB;
+}
+#about ul .midd>p i[class$="xingxing"]{
+    color: #FFAD0B;
+}
+#about ul .right{
+    float: right;
+}
+#about ul .right>div{
+    float: left;
+}
+#about ul .right>div:first-of-type{
+    color: #999999;
+    text-align: right;
+    margin-right: 32px;
+}
+#about ul .right>div strong{
+    font-size: 16px;
+    font-weight: 600;
+    color: #8C222C;
+}
+#about ul .right>div span{
+    margin:9px 0px;
+    height: 18px;
+    line-height: 17px;
+    border: 1px solid #F0BEBD;
+    border-radius: 2px;
+    color: #8C222C;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    width: 62px;
+}
+#about ul .right>div button{
+    width: 80px;
+    height: 26px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: transparent;
+}
+#about ul .right>div button:first-of-type{
+    border: 1px solid #dfbfaf;
+    color: #bf7f5f;
+}
+#about ul .right>div button:first-of-type:hover{
+    background-color: rgb(248,242,239);
+}
+#about ul .right>div button:last-of-type{
+    border: 1px solid #dad4cc;
+    color: #a9987f;
+}
+#about ul .right>div button:last-of-type:hover{
+    background-color: rgb(248,247,243);
+}
+#about #box{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about #box .layui-laypage-em{
+    background-color: #8C222C;
+}
+#about #box .layui-laypage a:hover{
+    color: #8C222C;
+}
+/* *************底部部分************** */
+#footer{
+    margin-top: 180px;
+}

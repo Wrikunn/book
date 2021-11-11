@@ -1,0 +1,364 @@
+@charset "utf-8";
+.center{
+    margin:0px auto;
+    width: 1000px;
+}
+body>div,section{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/* ***********各业面公用头部样式*********** */
+/* ****************头部登录部分***************** */
+#header{
+    height: 36px;
+    background-color: #F7F7F6;
+}
+#header .center{
+    display: flex;
+    justify-content: space-between;
+    line-height: 34px;
+    color: #666;
+    font-size: 12px;
+    position: relative;
+    background-color: #F7F7F6;
+    /* 版心不加背景色的话，浏览器窗口缩小，超出部分都没有颜色 */
+}
+#header a{
+    color: #666666;
+    padding:0px 8px;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+#header a:hover{
+    background-color: #fff;
+    color: #8C222C;
+}
+#header #logzhu:hover{
+    border: 1px solid #cccccc;
+    border-top: none;
+    border-bottom: 1px solid #fff;
+}
+#header #car:hover{
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom: 1px solid #fff;
+}
+#header span{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+#header span:hover{
+    background-color: #fff;
+    color: #8C222C;
+}
+#header span:hover select{
+    color: #8C222C;
+}
+#header select{
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    color: #666;
+    outline: none;
+    height: 34px;
+}
+#header option{
+    color: #000000;
+}
+/* 隐藏部分 */
+#header p em{
+    position: absolute;
+    top: 35px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    padding: 16px;
+    display: none;
+    font-size: 12px;
+    background-color: #ffffff;
+    z-index: 100;
+}
+#header p a:hover em{
+    display: block;
+    transform: translateX(-45%);
+}
+#header a:nth-of-type(1) em{
+    width: 164px;
+    height: 202px;
+    color: #9B9B9B;
+    font-size: 12px;
+}
+#header a:nth-of-type(1) em input{
+    width: 132px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #F9F9F7;
+    border: 1px solid #C7C3C0;
+    font-size: 12px;
+    color: #802E3C
+}
+#header a:nth-of-type(1) em input:first-of-type{
+    background-color: #8C222C;
+    border-color: #603435;
+    color: #ffffff;
+}
+#header a:nth-of-type(1) em input:first-of-type:hover{
+    background-color: #7B111B;
+}
+#header a:nth-of-type(1) em input:nth-of-type(2):hover{
+    border-color: #7B111B;
+}
+#header a:nth-of-type(3) em{
+    color: rgb(102,102,102);
+    line-height: 22px;
+    width: 214px;
+    height: 102px;
+}
+#header a:nth-of-type(3) em input{
+    margin-top: 8px;
+    width: 70px;
+    height: 24px;
+    background-color: #8C222C;
+    border: none;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 12px;
+}
+#header a:nth-of-type(3) em input:hover{
+    background-color: #7B111B;
+}
+#header a:nth-of-type(8) em{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+/* 商品页头部跳转部分 */
+#header .pointhead a:hover{
+    background-color: transparent;
+    text-decoration: underline;
+}
+/* ****************logo部分***************** */
+#logo{
+    height: 100px;
+    background-color: transparent;
+}
+#logo .center{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    background-color: transparent;
+}
+#logo .center>img{
+    width: 240px
+}
+#logo .center>div{
+    width: 624px;
+    height: 100%;
+    padding-left: 100px;
+}
+#logo .center>div p:first-child{
+    margin-top: 13px;
+}
+#logo p span:first-child{
+    color: #8C222C;
+    margin-right: 11px;
+    position: relative;
+}
+#logo p:nth-of-type(2){
+    position: relative;
+    margin-top: 7px;
+}
+#logo span em{
+    display: inline-block;
+    width: 0;height: 0;
+    border: 5px solid transparent;
+    border-bottom-color: #8C222C;
+    position: absolute;
+    left: 8px;
+    top: 13px
+}
+#logo p input:first-child{
+    height: 32px;
+    width: 500px;
+    box-sizing: border-box;
+    border: 2px solid #8C222C;
+    outline: none;
+    text-indent: 1em;
+    font-size: 12px;
+}
+#logo input::-webkit-input-placeholder{
+    color: #999999;
+}
+#logo select{
+    padding: 0px 20px;
+    border: none;
+    border-left: 1px solid #CCCCCC;
+    text-align: center;
+    font-size: 12px;
+    outline: none;
+    position: absolute;
+    left: 410px;
+    top: 8px;
+}
+#logo p input:last-of-type{
+    width: 90px;
+    height: 32px;
+    position: absolute;
+    left: 498px;
+    top: 0px;
+    background-color: #8C222C;
+    border: none;
+    color: #ffffff;
+}
+#logo p:nth-of-type(2) span{
+    float: right;
+    color: #605F5A;
+}
+#logo p:nth-of-type(2) span:hover{
+    color: #8C222C;
+}
+#logo .center>div p a{
+    color: #7D7C7A;
+    margin-right: 16px;
+}
+#logo .center>div p a:hover{
+    color: #8C222C;
+}
+/* *****************底部部分***************** */
+#footer .center{
+    height: 105px;
+    border-top: 1px solid #E5E5E5;
+    font-size: 12px;
+    color: #999999;
+    background: url(../img/footer.jpg) no-repeat center 66px;
+}
+#footer p:first-of-type{
+    margin: 15px 0px 10px;
+}
+#footer a{
+    color: #8999A9;
+    padding-left: 16px;
+}
+#footer a:hover{
+    color: #000000
+}
+#footer p span{
+    float: right;
+}
+/* ***figure部分公用样式**** */
+figure{
+    height: 628px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+figcaption{
+    color: #CDCDCD;
+    height: 56px;
+    width: 100%;
+    border-bottom: 1px solid #CECECE;
+    display: flex;
+    align-items: center;
+}
+figcaption span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin-right: 6px;
+}
+figcaption i{
+    font-size: 12px;
+    color: #0459A1;
+    margin-left: 6px;
+}
+figcaption i:hover{
+    color: #8C222C;
+}
+/* ***书籍信息部分公用样式**** */
+.book{
+    width: 100px;
+    height: 246px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0 3%;
+    color: #333333;
+}
+.book img{
+    align-self: center;
+}
+.book span{
+    margin-top: 15px;
+}
+.book b{
+    color: #999999;
+}
+.book i{
+    font-size: 16px;
+    color: #BF7F5F;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+}
+.book span:hover{
+    color: #8C222C;
+}
+/* *************右边悬浮框部分************** */
+#aside{
+    position: fixed;
+    right: 0;
+    bottom: 25%;
+}
+#aside>div{
+    width: 38px;
+    height: 38px;
+    background-color: #FAFAFA;
+    border: 1px solid #C2C2C2;
+    border-right: none;
+    border-bottom: none;
+    font-size: 12px;
+    text-align: center;
+    line-height: 19px;
+    color: #999696;
+    cursor: pointer;
+}
+#aside>div:hover{
+    color: rgb(102,102,102);
+}
+#aside>div a{
+    color: #999696;
+}
+#aside>div a:hover{
+    color: rgb(102,102,102);
+}
+#aside>div:last-of-type{
+    border-bottom: 1px solid #C2C2C2;
+}
+#aside .lastbox{
+    line-height: 38px;
+}
+#aside .toTop{
+    display: none;
+}
+#aside .carbox{
+    position: relative;
+}
+#aside em{
+    display: none;
+    background-color: #bf7f5f;
+    width: 15px;
+    height: 14px;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    position: absolute;
+    top: 6px;
+    right: 2px;
+}
